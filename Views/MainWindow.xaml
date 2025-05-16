@@ -1,0 +1,18 @@
+﻿<Window x:Class="PokemonExplorerWPF.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Pokémon Explorer" Height="500" Width="400">
+    <ScrollViewer>
+        <StackPanel Margin="20">
+            <Button Name="FetchButton" Content="Random Pokémon" Click="FetchButton_Click" Margin="0,0,0,10"/>
+            <TextBlock Name="NameText" FontSize="18"/>
+            <TextBlock Name="HeightText"/>
+            <TextBlock Name="WeightText"/>
+            <TextBlock Name="ColorText"/>
+            <TextBlock Name="LocationText" TextWrapping="Wrap"/>
+            <TextBlock Name="GenderText"/>
+            <TextBlock Name="VersionText" TextWrapping="Wrap"/>
+            <Button Name="MoreInfoButton" Content="More Info" Click="MoreInfoButton_Click" Margin="0,20,0,0" Visibility="Collapsed"/>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
